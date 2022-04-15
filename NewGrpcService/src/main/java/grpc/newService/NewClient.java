@@ -41,7 +41,7 @@ public class NewClient {
 		
 		//Clean up: shutdown the channel
 		newChannel.shutdown().awaitTermination(5, TimeUnit.SECONDS);
-		
+		//kewbfkhsebdkfhcehsvdzsbkfh
 	}
 
 }

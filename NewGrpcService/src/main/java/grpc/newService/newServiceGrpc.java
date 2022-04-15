@@ -123,6 +123,7 @@ public final class newServiceGrpc {
      *rpc stands for remote procedure call
      *containsString is the actual message that travel between client and server
      *a second message travels back
+     *unary
      * </pre>
      */
     public void getFirstString(grpc.newService.containsString request,
@@ -184,6 +185,7 @@ public final class newServiceGrpc {
      *rpc stands for remote procedure call
      *containsString is the actual message that travel between client and server
      *a second message travels back
+     *unary
      * </pre>
      */
     public void getFirstString(grpc.newService.containsString request,
@@ -228,6 +230,7 @@ public final class newServiceGrpc {
      *rpc stands for remote procedure call
      *containsString is the actual message that travel between client and server
      *a second message travels back
+     *unary
      * </pre>
      */
     public grpc.newService.containsString getFirstString(grpc.newService.containsString request) {
@@ -270,6 +273,7 @@ public final class newServiceGrpc {
      *rpc stands for remote procedure call
      *containsString is the actual message that travel between client and server
      *a second message travels back
+     *unary
      * </pre>
      */
     public com.google.common.util.concurrent.ListenableFuture<grpc.newService.containsString> getFirstString(
