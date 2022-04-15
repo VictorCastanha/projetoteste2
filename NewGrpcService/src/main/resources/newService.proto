@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+option java_package = "grpc.newService";
+option java_multiple_files = true;
+option java_outer_classname = "NewServiceImpl";
+
+service newService {
+	//rpc stands for remote procedure call
+	//containsString is the actual message that travel between client and server
+	//a second message travels back
+	//unary
+	rpc GetFirstString(containsString) returns (containsString){}
+	//rpc GetSecondString(containsString) returns (containsString){}
+
+	//get an int from the server
+	//unary rpc
+	rpc GetFirstInt(containsString) returns (newResponse){}
+
+}
+
+message containsString{
+
+	string firstString = 10;
+/*
+	int32 myInt = 2; //specify the exactly bits there are in the integer
+	bool myBool = 3;
+	bytes myImage = 4;
+*/
+}
+message newResponse{
+
+	int32 firstInt = 1;
+}
+
+
+
